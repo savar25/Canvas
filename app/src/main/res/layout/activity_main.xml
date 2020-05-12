@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:extra="http://schemas.android.com/apk/res/com.example.canvas"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a9a9a9"
+    tools:context=".MainActivity" >
+
+    <com.example.canvas.CV1
+        android:id="@+id/trial"
+        android:layout_width="331dp"
+        android:layout_height="532dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="200dp"
+        android:background="#939393"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        extra:columns="7"
+        extra:rows="7" />
+
+    <TextView
+        android:id="@+id/Player"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/trial"
+        app:layout_constraintEnd_toEndOf="@+id/trial"
+        app:layout_constraintStart_toStartOf="@+id/trial"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/color"
+        android:layout_width="99dp"
+        android:layout_height="5dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/trial"
+        app:layout_constraintEnd_toEndOf="@+id/trial"
+        app:layout_constraintStart_toStartOf="@+id/trial"
+        app:layout_constraintTop_toBottomOf="@+id/Player" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
